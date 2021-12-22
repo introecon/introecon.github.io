@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>An Introductory Course in Economics</title>
+  <meta name="description" content="Notes for introductory microeconomics and macroeconomics." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="An Introductory Course in Economics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Notes for introductory microeconomics and macroeconomics." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="An Introductory Course in Economics" />
+  
+  <meta name="twitter:description" content="Notes for introductory microeconomics and macroeconomics." />
+  
+
+<meta name="author" content="Gerhard Glomm, Joseph Westenberg" />
+
+
+<meta name="date" content="2021-12-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="growth.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Introduction to Economics</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#what-is-economics-all-about"><i class="fa fa-check"></i><b>1.1</b> What is Economics All About?</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#what-is-economics-good-for"><i class="fa fa-check"></i><b>1.2</b> What is Economics Good For?</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#examples"><i class="fa fa-check"></i><b>1.2.1</b> Examples</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#exercises"><i class="fa fa-check"></i><b>1.2.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#role-of-theory"><i class="fa fa-check"></i><b>1.3</b> Role of Theory</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#abstractions"><i class="fa fa-check"></i><b>1.3.1</b> Abstractions</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#prejudice-based-wage-discrimination"><i class="fa fa-check"></i><b>1.3.2</b> Prejudice-Based Wage Discrimination</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#dealing-with-data"><i class="fa fa-check"></i><b>1.4</b> Dealing with Data</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="index.html"><a href="index.html#empirical-regularities"><i class="fa fa-check"></i><b>1.4.1</b> Empirical regularities</a></li>
+<li class="chapter" data-level="1.4.2" data-path="index.html"><a href="index.html#correlation-vs-causation"><i class="fa fa-check"></i><b>1.4.2</b> Correlation vs Causation</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#multiple-choice-questions"><i class="fa fa-check"></i><b>1.5</b> Multiple Choice Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="growth.html"><a href="growth.html"><i class="fa fa-check"></i><b>2</b> Economic Growth</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="growth.html"><a href="growth.html#data-and-motivation"><i class="fa fa-check"></i><b>2.1</b> Data and Motivation</a></li>
+<li class="chapter" data-level="2.2" data-path="growth.html"><a href="growth.html#basic-notation"><i class="fa fa-check"></i><b>2.2</b> Basic Notation</a></li>
+<li class="chapter" data-level="2.3" data-path="growth.html"><a href="growth.html#measuring-economic-growth"><i class="fa fa-check"></i><b>2.3</b> Measuring economic growth:</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="growth.html"><a href="growth.html#a-thought-experiment"><i class="fa fa-check"></i><b>2.3.1</b> A thought experiment</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="growth.html"><a href="growth.html#the-rule-of-70"><i class="fa fa-check"></i><b>2.4</b> The Rule of 70!</a></li>
+<li class="chapter" data-level="2.5" data-path="growth.html"><a href="growth.html#the-solow-growth-model"><i class="fa fa-check"></i><b>2.5</b> The Solow Growth Model</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="growth.html"><a href="growth.html#physical-capital-accumulation"><i class="fa fa-check"></i><b>2.5.1</b> Physical Capital Accumulation</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="growth.html"><a href="growth.html#solow-model-and-data"><i class="fa fa-check"></i><b>2.6</b> Solow Model and Data</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="growth.html"><a href="growth.html#post-wwii"><i class="fa fa-check"></i><b>2.6.1</b> Post WWII</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="growth.html"><a href="growth.html#human-capital-accumulation"><i class="fa fa-check"></i><b>2.7</b> Human capital accumulation</a></li>
+<li class="chapter" data-level="2.8" data-path="growth.html"><a href="growth.html#technological-progress"><i class="fa fa-check"></i><b>2.8</b> Technological progress</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i><b>3</b> Appendix</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="appendix.html"><a href="appendix.html#statistical-fundamentals"><i class="fa fa-check"></i><b>3.1</b> Statistical Fundamentals</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="appendix.html"><a href="appendix.html#percentiles"><i class="fa fa-check"></i><b>3.1.1</b> Percentiles</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Created with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">An Introductory Course in Economics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">An Introductory Course in Economics</h1>
+<p class="author"><em>Gerhard Glomm, Joseph Westenberg</em></p>
+<p class="date"><em>2021-12-22</em></p>
+</div>
+<div id="intro" class="section level1" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
+<p>In this section we will learn</p>
+<ul>
+<li>What is economics about?</li>
+<li>What is economics good for?</li>
+<li>What is the role of theory in economics?</li>
+<li>How do Economists deal with data?</li>
+</ul>
+<div id="what-is-economics-all-about" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> What is Economics All About?</h2>
+<p>We can get a good sense of what economics is all about when we look at most frequently used words that show up in publications in scholarly economics journals. in the 1970s the most frequently used words in economics journals were words like</p>
+<pre><code>    Model.        Price.        Theory.</code></pre>
+<p>Now the most frequently used words in economics are:</p>
+<pre><code>    Evidence.       Impact.         Market.        Model.</code></pre>
+<p>You might not be surprised that then and now among the most frequently used words in the economics literature we find the words “price” and “market.”</p>
+<p>This use of language in some ways corresponds to the popular impression of what economics is all about. At social functions when asked:</p>
+<pre><code>    ``So, what do you do?&#39;&#39;</code></pre>
+<p>The answer: “I am an economist” is usually followed by:</p>
+<pre><code>    “Ah, supply and demand.”
+    And then:
+    Dead silence.</code></pre>
+<p>When talking to high school students or to first-year students in college and asking them what economics all is about, you typically get answers that fall into two broad categories. The first being things like</p>
+<pre><code>    Wall Street.        Finance.        GDP.        Stock Market.</code></pre>
+<p>The second category is things like:</p>
+<pre><code>    Supply.        Demand.        Graphs.        Math.        Markets.</code></pre>
+<p>All these terms suggest that in the popular impression economics is concerned with markets that determine the price, whether that be the price of Twinkies, t-shirts, gasoline, soybeans, stocks, options, iPhones, etc.</p>
+<p>The most frequently used terms by academic economists suggests that economics is much broader than just how markets determine the price of gasoline or stocks.</p>
+<div class="figure"><span style="display:block;" id="fig:fig002"></span>
+<img src="img/ch0/Alfred_Marshall.jpg" alt="Image Sourced from Wikipedia." width="50%" />
+<p class="caption">
+Figure 1.1: Image Sourced from Wikipedia.
+</p>
+</div>
+<p>One of the founding fathers of modern economics, Alfred Marshall, writes in Chapter 1 of his Principles of Economics book:</p>
+<blockquote>
+<p>“Political Economy or Economics is a study of mankind in the ordinary business of life; it examines that part of individual and social action which is most closely connected with the attainment and with the use of the material requisites of wellbeing.”</p>
+</blockquote>
+<p>The ordinary business of life: going to school, graduating, going to work, a career, dating and marrying, vacations, having children or not, the mortgage, car payments, illness, retirement, …</p>
+<p>All of these are parts of life for most of us, ordinary life.</p>
+<div class="figure"><span style="display:block;" id="fig:fig003"></span>
+<img src="img/ch0/Partha_Dasgupta.jpg" alt="Image Sourced from Wikipedia." width="50%" />
+<p class="caption">
+Figure 1.2: Image Sourced from Wikipedia.
+</p>
+</div>
+<p>One of the greats of modern economics, Partha Dasgupta<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, writes</p>
+<blockquote>
+<p>“These are no mere academic matters. If welfare and development economics, more generally political philosophy, are not about the circumstances in which people are born and the manner in which they are able to live and die, they are about nothing.”</p>
+</blockquote>
+<p>Evidently economics is about life from the moment we are born to the moment we die so anyway, with all its joys, with all its triumphs, but also with all its challenges, struggles, defeats and tragedies.</p>
+<p>This includes the preemies that are born weighing less than 2 pounds with their and their parents’ life - long struggle to flourish and to secure a comfortable life. How big are the medical bills? Does insurance cover them all?</p>
+<div class="figure"><span style="display:block;" id="fig:fig004"></span>
+<img src="img/ch0/fig4.jpg" alt="Image Sourced from unsplash." width="50%" />
+<p class="caption">
+Figure 1.3: Image Sourced from unsplash.
+</p>
+</div>
+<p>This includes the child born in the wrong ZIP code area that developmentally is already behind at age 3 and that will have a hard time catching up scholastically and that as a young adult will have difficulty making ends meet because of the poor employment prospects.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>This includes the young person who graduated from college with huge student debt that is impossible to be paid the back and that is very unlikely to be forgiven even in bankruptcy.</p>
+<p>This includes the parents of young children who are torn between going to work to pay the bills and staying home with their children because there is no reliable and safe childcare during covid-19.</p>
+<div class="figure"><span style="display:block;" id="fig:fig005"></span>
+<img src="img/ch0/fig5.jpg" alt="Image Sourced from unsplash." width="50%" />
+<p class="caption">
+Figure 1.4: Image Sourced from unsplash.
+</p>
+</div>
+<p>This includes the retired college professor whose physician tells him:</p>
+<blockquote>
+<p>``Walter, with your lung cancer you have 6 months to live, on the outside. Now is the time to do the things you’ve always wanted to do but have never done’’</p>
+</blockquote>
+<p>But who, the following morning, gets ready to go to his office, and when reminded by his wife of the physician’s advice that now is the time to do the things he always wanted to do, replies:</p>
+<blockquote>
+<p>``That is exactly what I’m doing. I am doing what I’ve always wanted to do. I am going to the office to do my work.’’</p>
+</blockquote>
+<p>This includes the mother from Nicaragua, Guatemala, or Honduras, who flees with her children north, to what she thinks is a safer place for her children knowing full well the meaning and implications for her of the term ``cuerpomatic’’<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</p>
+<p>This includes things like “positive assortative mating” or “like marries like.” Tall men/women tend to marry tall women/men. Another way of saying this is: The height of married couples is positively correlated. Highly educated women/men marry highly educated men/women. The level of education of married couples is positively correlated. It was not always like this.</p>
+<!-- Example of Positive Assortative Mating. -->
+<p>This includes all those people who suffer from kidney failure, who are waiting for a transplant kidney, who may or may not get one. In this country, about 13 people die per day, because there are no transplants available.</p>
+<div class="figure"><span style="display:block;" id="fig:fig006"></span>
+<img src="img/ch0/fig6.jpg" alt="Image Sourced from unsplash." width="50%" />
+<p class="caption">
+Figure 1.5: Image Sourced from unsplash.
+</p>
+</div>
+<p>Most textbooks define economics to be the study of the allocation scarce resources. A resource here is simply a means, something that is useful. Useful for a purpose. We usually assume that people have goals and that they will try to achieve these goals. But there are constraints that stand in the way.</p>
+<p>Money is resource that allows us to buy stuff. For most of us money is scarce, our budgets are limited. Therefore, we must make choices. The fancy car or a super vacation? Paying the utility bill or paying the medical bill? A fancy wedding or a dream house?<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+<p>Time, perhaps our most valuable resource, is also scarce. You will surely notice this, as many have before you, during finals week. You will wish that there were five or six extra hours in each day.</p>
+<p>Bandwidth, our ability to compute, to calculate, to process information, to decide rationally, is surely limited and many of us wish that our bandwidth were much, much bigger.</p>
+<div class="figure"><span style="display:block;" id="fig:fig007"></span>
+<img src="img/ch0/fig7.jpg" alt="Image Sourced from unsplash." width="50%" />
+<p class="caption">
+Figure 1.6: Image Sourced from unsplash.
+</p>
+</div>
+</div>
+<div id="what-is-economics-good-for" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> What is Economics Good For?</h2>
+<p>First and foremost, since economics is a social science, we would expect economics to be good and useful in explaining behavior. When we look around, there are all kinds of interesting observations that we would like to explain. And economics can help us go a long way towards providing explanations for all kinds of behavior.</p>
+<ol style="list-style-type: decimal">
+<li>Why did grocery stores run out of toilet paper at the beginning of the covid-19 epidemic?</li>
+<li>Why did women suffer more than men from the covid-19 induced epidemic when normally in other recessions men tend to suffer more employment losses than women?<br />
+</li>
+<li>Why are Dutch women taller than American women?</li>
+<li>Why do women when they buy a house from a man pay a higher price than a man and when they sell a house to a man they get a lower price than a man?</li>
+<li>Why did the price of bicycles rise during the covid-19 recession?</li>
+<li>Why did the price off used cars rise during the covid-19 recession?</li>
+<li>Why has the labor force participation of males been dropping for the last 20 or so years?</li>
+</ol>
+<p>The question is always:
+Why? Why? Why?</p>
+<p>Perhaps we can spend a little bit of time thinking about the following three examples of observations and ask why did these things happen?</p>
+<ol type="a" style="margin-left: 10px">
+<li>
+In Maine in the 1800 Lobster was used commonly to feed prisoners and it was used commonly for fertilizer on the fields. Why?
+</li>
+<li>
+In a recent 5K race in Bloomington Indiana there were participants in basically all age groups from age 16 all the way up to age 80. this was true for both men and women with one exception. in the category Between age 30 and 35 there was not a single female participant. Why?
+</li>
+<li>
+According to some reports from field workers In a refugee camp for the Rohingya in Bangladesh There were children older than five years of age and younger than 2 but there were no children between the ages of 2 and 5. Why?
+</li>
+</ol>
+<p>We will see how economics can provide answers too many of these why? why? why? Questions.</p>
+<p>Economics can also provide answers to questions like what are the underlying assumptions that some individuals make under which their behavior might be rational?</p>
+<p>If we consider a CEO who believes they are running late to a meeting for a merger worth millions of dollars. We might think driving at very high speed under these circumstances actually makes a lot of sense. It is the rational thing to do.</p>
+<p>On May 25, 2020, Amy Cooper, a white woman, let her dog off its leash in Central Park. Christian Cooper, a black male who was in the park watching birds asked her to leash her dog back up. Amy Cooper called the police alleging an “African American man” was threatening her.<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+<p>Under what assumptions is the behavior of Amy Cooper in Central Park rational? <a href="https://www.ncronline.org/news/opinion/assumptions-white-privilege-and-what-we-can-do-about-it">This article</a> digs into this. Rationality here and in the rest of these notes means: Our actions are guided by a particular purpose or goal, taking into consideration all constraints and all relevant information. Bryan Massingale in the article below list many assumptions under which Amy Cooper’s behavior in Central Park is actually rational. Her actions seem to make sense under the assumption that her word as a white female would have more weight than the word off a black male. Since she must have thought that any police officers, not a particular police officer, summoned by her would give more credibility to her word than to the black male, she must have believed and hoped for what we would call systemic racism. Her actions make sense, her actions are rational, if she believes in systemic racism.</p>
+<p>The second thing economics is good for is to evaluate policies. Policies are just the things governments, in particular, and institutions in general do. The federal government determines spending on defense and Medicare. It regulates immigration to this country. The state government chooses educational policies and whether to legalize weed. A local government decides to fund public parks and bicycle paths. A country club determines the rules for the use of a golf course. A faith organization chooses particular youth programs. A corporation chooses particular HR policies.</p>
+<p>In each one of these cases we want to know:</p>
+<ul>
+<li>Does the policy work?</li>
+<li>Is it a good policy?</li>
+</ul>
+<p>We want to be able to hold public officials accountable for the policies they pick. In order to be able to do, we need to be able to figure out how people respond and react to these policies.</p>
+<p>This leads us to a subject that is covered in the opening chapters of all introductory economics textbooks:</p>
+<p><strong>The law of unintended consequence</strong></p>
+<p>The law of unintended consequences simply states that when a policy is changed, people will respond to that policy change, and frequently in ways that are difficult to forecast by the policy maker. Of course, the more careful the policy maker thinks about possible responses of people to the change in the policy, the fewer surprise responses to the policy there will be. But it is a testimony to human ingenuity and creativity that even with the best intention the best laid plans of mice and men often lead to disastrous outcomes. My guess is that such adverse responses to policy changes will never be eliminated, even after the most careful analysis of the proposed policy change.</p>
+<p>It should not be a surprise that bad people will respond to changes in a policy. People simply do what they believe is in their best interest and when incentives change, chances are their behavior will change as well.</p>
+<p>If I announce that in my class there will be a final exam that is comprehensive, that is the hardest exam on campus with a pass rate off only 30%, there are a variety of possible reactions to this kind of an announcement. Some students will decide to study harder, some students might get a tutor, some students might decide to come to office hours more frequently. Some students might just give up, drop the class and wait until that class is offered by a different faculty member who has easier exams. This is just incentives at work. But we have to acknowledge that the different students will respond in different ways and it is just extremely difficult to predict the behavioral response a particular student.</p>
+<p>There are some interesting responses to changes in government policy.</p>
+<div id="examples" class="section level3" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Examples</h3>
+<ol style="list-style-type: decimal">
+<li><strong>(Epidemics I)</strong> I heard of a convenience store in Virginia that had attached to it a video arcade with a separate entrance. During covid-19, the convenience store was declared essential and allowed to stay open, the video arcade shut by order of the government. How did the owner of the convenience store and the video arcade respond to this government policy? He simply moved some of the video games into the convenience store, thereby increasing the density of customers in the store and the therefore the risk of infection of customers. <strong>NEED CITATION</strong></li>
+</ol>
+<p><br></p>
+<ol start="2" style="list-style-type: decimal">
+<li><strong>(Epidemics II)</strong><a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> On March 11, 2020, President Trump announced a travel ban from most countries in Europe to be effective March 13th and to last 30 days. If you are an American traveler in Europe, how would you respond to this announcement? If you are an American tourist in Europe, how would you respond? If you are an American on business in Europe, how would you respond? Or, if you are an American student on an exchange program in the affected European countries, how would you respond? Regardless of your original plans for your return trip, you might well conclude that the best course of action for you is to hightail it home as quickly as you possibly can. Evidently, many Americans decided that this was indeed their best course of action, so they change their plans and return home as quickly as possible. As a consequence, American airports on March 12 and 13 were overcrowded, contributing to the further spread of the virus. Perhaps this crowding might have been avoided to some degree buy more carefully planning the return flights and spreading out over time the arrival of these flights into international American airports.</li>
+</ol>
+<p><br></p>
+<ol start="3" style="list-style-type: decimal">
+<li><strong>(Work Incentives)</strong> During the financial crisis off 2008 and 09 the governments in many affected countries designed rescue packages to bailout banks, at least the largest banks. Some of these rescue packages contain explicit caps on bonuses for banking executives. If the government imposes caps on those bonuses, how might banks respond to such limitations? Well, if I cannot reward my employees through higher bonuses, I can still reward my employees by increasing their base salaries. To the extent that the bonuses are used to reward exceptionally good performance and thereby provide incentives for such exceptionally good performance, this cap on bonuses seems to have one adverse effect: weaker incentives for exceptional performance. Not sure if that is what you want.</li>
+</ol>
+<p><br></p>
+<ol start="4" style="list-style-type: decimal">
+<li><strong>(Health)</strong> Imagine you are concerned with excessively long waiting times at emergency rooms in the hospitals in your state. Suppose you want to design a scheme that rewards hospitals to decrease those waiting times. So, you collect the data on average waiting times in these emergency rooms and then you design rewards for those hospitals who reduce the waiting times the most. If you measure waiting time from the moment the patient comes through the door to the time the patient is treated, how might hospitals actually respond to this new policy?
+Hospitals might ask the ambulances to wait in the hospital parking lot. Surely this is not a desired outcome.</li>
+</ol>
+<p><br></p>
+<ol start="5" style="list-style-type: decimal">
+<li><strong>(Education)</strong> Supposed you want to reward teachers for better performance of their students on standardized tests. Suppose the stakes, the rewards are big. How might the teachers respond to these incentives? Surely there are many possibilities.
+Some teachers might better prepare their lessons.
+Some teachers might spend more time with students who are struggling.
+But some teachers might also provide caffeinated sugary drinks to their students the day of the test to get a short time boost in attention and concentration to improve their performance. I suspect the dentists will love this.
+Or, and this is an extreme case, some teachers might actually be induced to cheat on behalf of their students. One example of teachers engaging in such cheating is documented in the first book Freakonomics. <strong>NEED CITATION</strong></li>
+</ol>
+<p><br></p>
+<ol start="6" style="list-style-type: decimal">
+<li><strong>(Gender)</strong><a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a> Family leave policies are intended to allow moms and dads to spend quality time with their new-born babies. In many places/organizations there has been a gradual shift from no leave, paid or unpaid, to maternity leave for the mom to family leave for both mom and dad, when a baby is born. In some organizations there is still no maternity or family leave policy in place and women have to take sick days or personal days to deliver their baby. At a typical university maternity or family leave is ties to “stopping the tenure clock.” Stopping the tenure clock simply means, that mom and/or dad have extra time, often one year, to be considered for tenure. Tenure basically ensures lifetime job security. Its is a BIG deal.
+Allowing dads time off and stopping the tenure clock for dads as well as for moms is often seen as a great equalizer of men and women, dads and moms. After all, now dad can spend time with his baby as well. What could possibly be or go wrong with that?
+The paper below shows that the policy of providing gender neutral family leave and stopping the tenure clock in a gender-neutral way, increases dad’s chances of tenure by 19 percentage points and decreases mom’s tenure of tenure by 22 percentage points.
+So much for achieving gender neutrality!</li>
+</ol>
+<p><br></p>
+<ol start="7" style="list-style-type: decimal">
+<li><strong>(Gender)</strong><a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a> The German government passes a law that grants automatic German citizenship tights to all immigrant children born in Germany after January 1, 2000. You might think that such a law would benefit all immigrants regardless of country of origin, skin color, religion, sex, gender identity and age. Why? It is just a right. The law increases the realm of the possible. It increases opportunities. It does not take away any opportunities. What could possibly be wrong with more choices, more opportunities? So, one would be inclined to think that all immigrants would be better off and report being happier. And in that believe we would be wrong. Why? The law of unintended consequences strikes again.
+Self-reported happiness declined after this law was passed for Muslim girls. Muslim immigrant girls become disillusioned. Muslim parents are less likely to help their daughters who qualify for citizenship with their homework. They are also less likely to speak German with their daughters. Muslim immigrant girls who qualify for German citizenship are less likely to self-identify as German.
+The law of unintended consequences truly rears its ugly head.
+None of these effects are found for Muslim boys. None of these effects are found for children of other faiths.
+Why do we find these effects for Muslim immigrant girls? Parents of Muslim immigrant girls react strongly to counter effect the pull of German society to keep their daughters withing their cultural and religious traditions.</li>
+</ol>
+</div>
+<div id="exercises" class="section level3" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li>Suppose the State passes a law that allows for “No knock warrants.” <a href="https://en.wikipedia.org/wiki/No-knock_warrant#:~:text=In%20the%20United%20States%2C%20a,knocking%20or%20ringing%20a%20doorbell">See here</a> if you are unsure what this is.</li>
+</ol>
+<ol type="a" style="margin-left: 40px">
+<li>
+Make a list of the possible “unintended consequences” of this policy.
+</li>
+<li>
+Who would get impacted by this policy? Positively or negatively?
+</li>
+<li>
+How hard is it to foresee/forecast these consequences?
+</li>
+</ol>
+<ol start="2" style="list-style-type: decimal">
+<li>President Trump issued an Executive order on June 22, 2020 to severely limit H1-B and L1 visas. H1-B visas are visas issued so American companies can hire high-skilled immigrants. L1 visas allow American multinational corporations to transfer foreign managers and employees to their offices in the US.<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a></li>
+</ol>
+<ol type="a" style="margin-left: 40px">
+<li>
+Make a list of all the effects of this policy. Who would get impacted by this policy? Positively or negatively?
+</li>
+<li>
+How hard is it to foresee/forecast these consequences?
+</li>
+</ol>
+</div>
+</div>
+<div id="role-of-theory" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Role of Theory</h2>
+<p>What is the role of theory in economics?</p>
+<p>A quote by a 12th century philosopher, Peter Abelard:</p>
+<blockquote>
+<p>“The man of understanding is he who has the ability to grasp and ponder the hidden causes of things. By hidden causes we mean those from which things originate, and these are to be investigated more by reason than by sensory experiences.”</p>
+</blockquote>
+<p>We can paraphrase this by saying: If we want to understand stuff, we ought to rely more on our brain and think more about how things might actually work, rather than collecting data with our senses.
+Charles Darwin, in a letter to one of his friends expressed a similar opinion:</p>
+<blockquote>
+<p>“About thirty years ago there was much talk that geologists ought only to observe and not theorise; and I well remember someone saying that at this rate a man might as well go into a gravel-pit and count the pebbles and describe the colors. How odd it is that anyone should not see that all observation must be for or against some view if it is to be of any service!”</p>
+</blockquote>
+<p>I interpret that last clause in Darwin’s letter to mean: All observations must be used to either confirm or reject a hypothesis or theory, if the observation is to be of any use at all. That implies that theory comes first.</p>
+<p>So, what is this thing called a “theory?” I will use the words: theory, model, and abstraction as synonymous. A theory is a creation of our minds; it is an idea of how some part of the word operates or might operate.</p>
+<p>The theories we use will be different in economics and in physics. Even within economics there will be different theories or models. Macroeconomists will use different models than economists who study anti-trust. The main job of a model is to help us understand how a part of the world works. Any theory or model is supposed to be useful, for understanding.</p>
+<div id="abstractions" class="section level3" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> Abstractions</h3>
+<p>How is an abstraction useful? Suppose the job is to drive from Indianapolis, IN to Columbus, OH. We need a map to help us get there.</p>
+<div style="page-break-after: always;"></div>
+<div id="htmlwidget-71661efbff4f90c09e46" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-71661efbff4f90c09e46">{"x":{"options":{"minZoom":2,"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomSnap":0.5,"zoomDelta":0.5},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[39.8752,-84.403],7.5,[]]},"evals":[],"jsHooks":[]}</script>
+<p>Above we have a map. It has all kinds of information. The IN-KY border. If we zoom in, there are many roads, many cities. Zoom out, there is Lake Michigan, Lake Erie. A whole bunch of information about Illinois. Much of this information is not relevant if the task is to get from Indianapolis to Columbus.</p>
+<p>In order to get from Indy to Columbus, not much information is needed. Most, practically all of the information above is useless and needs to be discarded. Pretty much the only information needed is illustrated below. All we need is the starting point, Indy, the endpoint, and the instructions to get on I -70 in Indy until the sign “Columbus, OH” appears. This is really all that is essential.</p>
+<p>INDY—————————I 70———————————Col</p>
+<p>There are a few more things that one might reasonably add to our “model” of the relevant piece of geography. It might be useful where the gas stations are, especially the ones with clean bathrooms, and where the coffee shops are so the driver does not fall asleep. One such establishment, marked by G for gas station, is added in the model below.</p>
+<p>INDY—————————I 70——————–G———–Col</p>
+</div>
+<div id="prejudice-based-wage-discrimination" class="section level3" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> Prejudice-Based Wage Discrimination</h3>
+<p>How to find prejudice-based wage discrimination?</p>
+<p>In this example I will try to show that economic theory can generate useful insights or knowledge. The way this works in this example is that economic theory will suggest precisely where we have to look for evidence. The issue or example that we will use here is the question:
+How, if, and to what extent does racial prejudice show up in or generate wage discrimination by race?</p>
+<p>The work in economics on racial discrimination goes back at least to the seminal work by Nobel Laureate Gary Becker from the University of Chicago.</p>
+<p>For starters, we have to distinguish between prejudice and wage discrimination. Prejudice is an attitude, a negative attitude, a sentiment toward a particular group of people, Blacks for example. Wage discrimination is a particular outcome in labor markets that simply says comparable blacks and comparable whites earn different wage rates.
+The question then is: How, to what extent, if at all, does racial prejudice determine such wage discrimination?</p>
+<p>In order to start thinking about this issue, we will consider a very simple example. Blacks make up about 10% off the population or the labor force. There are two distinct labor markets. In labor market 1 the population of white people exhibits basically no racial prejudice. In labor market 2, the population of white people exhibits very strong racial prejudices.</p>
+<p>In which labor market would we expect wage discrimination by race to be strongest? Labor market 1 or labor market 2?</p>
+<p>Without a moment’s thought most of us would be tempted to say: Of course, racial discrimination higher, stronger, worse in labor market 2 than in labor market 1.</p>
+<p>But that would be missing an element off the story that probably is very important.</p>
+<p>Blacks will most likely know or at least have some pretty good information on where the racists live, in which labor market they operate. Why would they know this? Chances are they have experienced the manifestations of racism and through their social network this information is broadly shared.</p>
+<p>So, to the extent that blacks have information on manifestations of racism and to the extent that they are free to move between labor markets, to choose their place of employment, they will probably move from labor market 2 two labor market 1. This is of course, holding other things equal. holding other things equal just means that in all other aspects these two labor markets are roughly comparable. they only differ in this one aspect: prejudice.</p>
+<p>So, if blacks can move freely, relatively freely, they will choose labor market 1 over labor market 2 in which case there might be very little racial wage discrimination in labor market 2. If all Blacks where to move into labor market one, then there would be no racial wage discrimination in labor market 2 at all.</p>
+<p>Therefore, our answer that labor market 2 will exhibit more wage discrimination than labor market 1 is probably false.</p>
+<p>There is a <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1073644">recent paper linked here</a>, together with a <a href="https://www.youtube.com/watch?v=N38XrQ6x7ck">short video</a> by one of its authors, that uses currently available data to show us exactly where and how we should look for the impact of prejudice on labor market discrimination.</p>
+<p>We start with constructing a racism distribution. This is not just some fancy Ivory Tower notion. This distribution is firmly grounded in data. There is a data set that is widely available, called The General Social Survey, GSS, that asks questions like:</p>
+<ul>
+<li>How would you respond if your daughter dated a black person?</li>
+<li>Would you vote for a black man for president of the United States if he were qualified?</li>
+</ul>
+<p>Answers to questions like these can be put together to create an index of racism and then a distribution of racism in a particular locality. The figure below illustrates such an example off a racism distribution.</p>
+<p>Some researcher suggests that in order to assess the impact of prejudice on wage discrimination one should look at a correlation between the average or median degree of prejudice and the average level of wage discrimination. They collect the best data available for the 50 States and calculate or estimate that correlation. They find nothing.</p>
+<p>Why?</p>
+<p>Just like in the example with 2 labor markets, Blacks will, if they can, avoid the right tail of the racism distribution. They will shift to the left as far as possible in the racism distribution.</p>
+<p>In Wisconsin, about 6% of the labor force is black. If they all seek employment, they would be matched with some, mostly likely white, employer. If we line up all white employers on a racism distribution, with the least racist employers on the left and the most racist employers on the right, then black workers would seek employment as far away from the most racist employers as possible. Black workers would go to the left of the racism distribution as much as possible. Since Blacks in Wisconsin make up 6 percent of the population, these 6 percent would then be seeking employment from the 6 percent of the least racist employers. Since Blacks are seeking employment as far to the left tail of the prejudice distribution as possible, then it is the 6percentile of the prejudice distribution that matters for wage discrimination. Not the average, not the median. The 6 percentile.</p>
+<p>In Mississippi, about 34% of the labor force is black. In Mississippi, wage discrimination is determined by the 34th percentile of the prejudice distribution. Not the average, not the median, not the 6th percentile. The 34th percentile.</p>
+<p><strong>STATISTIC FUNDAMENTALS - WHAT IS A PERCENTILE</strong></p>
+<p>So far, we have not looked at any data; so far this is all theory.
+What is in the data?</p>
+<p>When you look for the connection between prejudice and wage discrimination by looking at averages you find nothing.</p>
+<p>But when you look for it in the way suggested by the theory, the 6th percentile of prejudice distribution in WI, the 34th percentile in MS, then BINGO! There it is, clear and significant evidence linking prejudice to wage discrimination. You just need to know where to look. Theory helps.</p>
+</div>
+</div>
+<div id="dealing-with-data" class="section level2" number="1.4">
+<h2><span class="header-section-number">1.4</span> Dealing with Data</h2>
+<div id="empirical-regularities" class="section level3" number="1.4.1">
+<h3><span class="header-section-number">1.4.1</span> Empirical regularities</h3>
+<p>First of all, we note that we are more interested in empirical regularities than in singular observations. Jennifer is 5’4” is an example of a singular observation. That is only one observation. Dutch women are tall is an example of an empirical regularity. This observation is more general. We would find this if we looked at a sample of women from Amsterdam, from Rotterdam, from The Hague, etc.</p>
+<p>Rich people live longer than poor people.</p>
+<p>This is a fact, in Indiana, New Jersey and in Kentucky. It is also true in France and in Japan.<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a></p>
+<p>The sex ratio in the US is 1.04. The sex ratio is the ratio of the number of women to the number of men. For each 100 men in this country there are 104 women. If you look up this ration by State, there is some variation. For most states, there are more women than men. But there are exceptions. In some Western states, there are more men than women. These exceptional states include Alaska, Montana, Wyoming. You may want to ask why there are such large differences in sex ratios across the 50 States.</p>
+<p>Numbers: Big or small?</p>
+<p>One of the important issues we have to discuss is: Are numbers big or small. This is especially true when we are talking about dollars, taxes, expenditures, the size of government programs.</p>
+<div id="examples-1" class="section level4" number="1.4.1.1">
+<h4><span class="header-section-number">1.4.1.1</span> Examples</h4>
+<ol style="list-style-type: decimal">
+<li>After the Haiti earthquake in 2010, the US government committed $100 million in earthquake relief. Big number, small number? It might look like a big number. But when you consider that there are over 300 million Americans, we realize that each of us gave about 30 cents, which looks miserly. Of course, this does not include private charitable contributions.</li>
+</ol>
+<p><br></p>
+<ol start="2" style="list-style-type: decimal">
+<li>The cost of the Apollo mission which ultimately landed a man on the moon has been estimated to be about $150 billion, in 2019 dollars. In 2019 the White House made a request to combat deaths from illicit opioid abuse to the tune of $7 billion. In 2018 over 67,000 people dies from opioid overdoses. Is $7 billion a big number or a small number?<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a></li>
+</ol>
+<p><br></p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>According to an article in The Economist, August 8 -14, 2020 world- wide spending on research for a Covid-19 vaccine was about $10 billion. Sure sounds like a heck of a lot of money. But. Just in the US, the number of people who have died, at that time, was about 100,000. The value of a statistical life<a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a> in the US for the median age American is about $10 million. Since Covid-19 takes mostly older people we might use $5 million for the value of an older statistical life. The typical failure rate in late stages of vaccine trials is about 20%. Multiplying the value of an older statistical life by the number of Americans who dies because of Covid-19 we get:</p>
+<p>$100,000  ,000,000 = $ 500 billion</p>
+<p>Covid-19 does not only kill Americans. And now we know that the death toll is much higher. Should we have spent more on vaccine research in 2020?</p></li>
+</ol>
+</div>
+</div>
+<div id="correlation-vs-causation" class="section level3" number="1.4.2">
+<h3><span class="header-section-number">1.4.2</span> Correlation vs Causation</h3>
+<p>This distinction is crucial. Knowing whether 2 variables are correlated is useful, but it is not enough. In order to make any kind of policy decision we must know causation. Correlation only tells us about a statistical relationship. Two variables may be positively correlated or they may be negatively correlated. Suppose variable X is positively correlated with variable Y. Then if X is large (small), then Y is large (small) as well. If the two variables X and Y are negatively correlated, that means that If X is large (small), then Y is small (large). Of course, there is also the possibility of no correlation.
+My typical calorie intake is positively correlated with my body weight.
+The time students spend studying for Finite Math exams may be negatively correlated with the grades in English classes.
+Whether students are vegetarians or not is ( I suspect) not correlated with their grades in introductory History classes.
+We can think of these correlations as patterns in the data. They tell us nothing about causation.</p>
+<p>Causation is an altogether different story. Causation means that one event leads to another. The event “An increase in the price of socks,” will lead to the event “Gerhard buys fewer socks.” We will talk about this at some length in this class. The event “90 percent of Americans getting the Covid-19 vaccine” will lead to the event “Americans achieve herd immunity.” The event “Gerhard drives like a maniac on the interstates” leads to the event “The probability of fatal car crashes rises.”<br />
+There are lots and lots of examples like this. We need to be able to infer causality if we want to have any hope that the policies we pick actually make things better.</p>
+<p>If two variables, X and Y, are positively correlated, there are several possibilities concerning causation:</p>
+<ol style="list-style-type: decimal">
+<li>X could cause Y: an increase in X could cause an increase in Y. An improvement in nutrition in childhood causes an increase in adult height. There is no way adult height could influence the quality of childhood nutrition.</li>
+<li>Y could cause X: an increase in Y could cause an increase in X.</li>
+<li>X could cause Y AND Y could cause X: You study hard for your econ class and as a consequence you do well in the class. And: Since you do well in your econ class, you like econ and therefore you study harder. The hard part might be to find out which effect is stronger.</li>
+<li>X does not cause Y, nor does Y cause X. But there is another variable, Z, that causes both X and Y.</li>
+</ol>
+<p>In order to tease causation out of the data, we try to create what we call <strong>a parallel universe.</strong></p>
+<p>The point of this parallel universe is to look at two cases, two “universes” that are equal in all aspects except one aspect, the aspect we want to study.</p>
+<div id="examples-2" class="section level4" number="1.4.2.1">
+<h4><span class="header-section-number">1.4.2.1</span> Examples</h4>
+<ol style="list-style-type: decimal">
+<li><p>Suppose I want to study the effect of the Florida “stand your ground law” on homicides in Florida. Then I will collect all kinds of data for Florida. And I will collect the same kind of data in similar states. It would make little sense to compare Florida to Norway. But comparing Florida to states with similar income distribution, similar ethnic composition, similar poverty rates, similar age distribution makes sense. Like Georgia, Alabama, Arkansas.</p>
+<p>Then we can compare homicide rates in Florida to those in other states that did not pass stand your ground laws. That is one difference we can exploit for our analysis. The other difference we can exploit for our analysis is to what happened to the trend in homicides before and after the law was passed.</p>
+<p>The conclusion that emerges in this case is quite shocking: It appears that the stand your ground law has caused an INCREASE in homicides.<a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a></p></li>
+</ol>
+<p><br></p>
+<ol start="2" style="list-style-type: decimal">
+<li>In example 6 of the Law of Unintended Consequences above, how could the researchers “establish” or “find” a parallel universe? Sometimes you are just lucky. The law applied to all immigrant children born after January 1, 2000. The law separates those immigrant children born before that date from those born after that date. Children borne 6 months before and children borne 6 months after will be in the same school grade. They will be very, very similar in all or at least most other aspects. The fact that the law kicks in January 1 is very fortuitous for researchers. It creates almost ideal conditions to have a treatment group and a control group. Having a treatment group and an identical control group is what we mean by having “a parallel universe.”</li>
+</ol>
+<p><br></p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>In 2015, the City of Chicago banned all single use plastic shopping bags that were less than 2.25 mils thick. All other bags were unregulated. What are the consequences of this ban?</p>
+<p>Short answer: Stores responded by using bags that are still made of plastic and that are thicker and therefore use MORE plastic. Another unintended consequence.</p>
+<p>Unintended consequences seem to be everywhere.</p>
+<p>How would we know? How can we infer causality? Where are the parallel universes? Where are treatment and control groups?</p>
+<p>The researchers reasoned that stores just inside city limits ought to be very similar to store just outside if city limits in the suburbs. The researchers also reasoned that shoppers just inside the city limit are very similar to shoppers just outside the city limit. So, data from just outside the city limit can serve as a parallel universe to what is going on inside the city limit.</p>
+<p>There is more: Stores and shoppers just before the ban and just after the ban are going to be very similar. So, in addition to the comparison of inside and outside the city limit we have the comparison of just before and just after the ban. Looking at these two comparisons allows the researchers to nail down the effect of the ban: Disposable bag use remained very high. Many grocery stores just used bags that were just thick enough to be above the limit.<a href="#fn14" class="footnote-ref" id="fnref14"><sup>14</sup></a></p>
+<p><br></p></li>
+<li><p>How damaging to your health is lead? This is a big question. Most rich countries have tried to eliminate lead from gasoline and from paint. Lead is often still found in drinking water. How does lead get into your drinking water? Through the lead pipes.<a href="#fn15" class="footnote-ref" id="fnref15"><sup>15</sup></a></p>
+<p>We can narrow down the question a bit: How damaging to your baby’s health is lead from drinking water?</p>
+<p>The paper below provides an answer by consider a natural treatment and control group, or, in our language, a parallel universe. We find the parallel universe in Newark, NJ. The city was served by two different water treatment plants, with the service boundary of the two plants being basically an arbitrary line running across the city. An accident (bad decision?) in one treatment plant caused excessive corrosion and, as a consequence, excessive exposure to lead in one part of the city. This excessive exposure to lead increased the probability of low birthweight babies by between 1.4 and 1.9 percentage points. This is an increase of between 17 and 22 percent.</p>
+<p>Exploiting such parallel universes can, evidently, be quite useful.<a href="#fn16" class="footnote-ref" id="fnref16"><sup>16</sup></a></p></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="multiple-choice-questions" class="section level2" number="1.5">
+<h2><span class="header-section-number">1.5</span> Multiple Choice Questions</h2>
+<iframe src="html\ch0questions.html" title="q0" frameBorder="0">
+</iframe>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p><a href="http://www.econ.cam.ac.uk/people/emeritus/pd10000" class="uri">http://www.econ.cam.ac.uk/people/emeritus/pd10000</a><a href="index.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://research.upjohn.org/up_press/228/" class="uri">https://research.upjohn.org/up_press/228/</a><a href="index.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p><a href="https://www.americasquarterly.org/blog/rape-another-threat-on-migrant-womens-journey-north/" class="uri">https://www.americasquarterly.org/blog/rape-another-threat-on-migrant-womens-journey-north/</a><a href="index.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p><a href="https://www.netflix.com/title/81113929" class="uri">https://www.netflix.com/title/81113929</a><a href="index.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p><a href="https://www.nytimes.com/2020/07/06/nyregion/amy-cooper-false-report-charge.html" class="uri">https://www.nytimes.com/2020/07/06/nyregion/amy-cooper-false-report-charge.html</a><a href="index.html#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p><a href="https://crofsblogs.typepad.com/h5n1/2020/05/trumps-europe-travel-ban-triggered-covid-19-spreadin-the-us.html" class="uri">https://crofsblogs.typepad.com/h5n1/2020/05/trumps-europe-travel-ban-triggered-covid-19-spreadin-the-us.html</a><a href="index.html#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p><a href="http://ftp.iza.org/dp9904.pdf" class="uri">http://ftp.iza.org/dp9904.pdf</a><a href="index.html#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p><a href="https://www.cesifo.org/en/publikationen/2020/working-paper/caught-between-cultures-unintended-consequences-improving" class="uri">https://www.cesifo.org/en/publikationen/2020/working-paper/caught-between-cultures-unintended-consequences-improving</a><a href="index.html#fnref8" class="footnote-back">↩︎</a></p></li>
+<li id="fn9"><p><a href="https://www.nber.org/papers/w27997" class="uri">https://www.nber.org/papers/w27997</a><a href="index.html#fnref9" class="footnote-back">↩︎</a></p></li>
+<li id="fn10"><p><a href="http://www.equality-of-opportunity.org/assets/documents/healthineq_summary.pdf" class="uri">http://www.equality-of-opportunity.org/assets/documents/healthineq_summary.pdf</a><a href="index.html#fnref10" class="footnote-back">↩︎</a></p></li>
+<li id="fn11"><p><a href="https://www.whitehouse.gov/briefings-statements/white-house-seeks-billions-record-investments-stop-drug-epidemic/" class="uri">https://www.whitehouse.gov/briefings-statements/white-house-seeks-billions-record-investments-stop-drug-epidemic/</a><a href="index.html#fnref11" class="footnote-back">↩︎</a></p></li>
+<li id="fn12"><p>Kip Viscusi <a href="https://law.vanderbilt.edu/bio/w-kip-viscusi" class="uri">https://law.vanderbilt.edu/bio/w-kip-viscusi</a> pioneered the research on the value of a statistical life.<a href="index.html#fnref12" class="footnote-back">↩︎</a></p></li>
+<li id="fn13"><p><a href="https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2582988" class="uri">https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2582988</a>
+For more comprehensive evidence, see
+<a href="https://www.rand.org/research/gun-policy/analysis/stand-your-ground/violent-crime.html" class="uri">https://www.rand.org/research/gun-policy/analysis/stand-your-ground/violent-crime.html</a><a href="index.html#fnref13" class="footnote-back">↩︎</a></p></li>
+<li id="fn14"><p><a href="https://www.nber.org/papers/w28499" class="uri">https://www.nber.org/papers/w28499</a><a href="index.html#fnref14" class="footnote-back">↩︎</a></p></li>
+<li id="fn15"><p><a href="https://www.economist.com/united-states/2021/04/17/replacing-lead-pipes-a-newark-success-story" class="uri">https://www.economist.com/united-states/2021/04/17/replacing-lead-pipes-a-newark-success-story</a><a href="index.html#fnref15" class="footnote-back">↩︎</a></p></li>
+<li id="fn16"><p><a href="https://www.nber.org/papers/w27996" class="uri">https://www.nber.org/papers/w27996</a><a href="index.html#fnref16" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="growth.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/jmwestenberg/microquestions/notes/bookdown/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+},
+"always_allow_html": true
+});
+});
+</script>
+
+</body>
+
+</html>

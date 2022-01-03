@@ -20,7 +20,7 @@
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script><link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
 <script src="libs/leaflet-1.3.1/leaflet.js"></script><link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
 <script src="libs/proj4-2.6.2/proj4.min.js"></script><script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script><link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS -->
+<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="style.css">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -47,7 +47,12 @@
 <li><a class="" href="growth.html"><span class="header-section-number">3</span> Economic Growth</a></li>
 <li><a class="" href="rational-choice.html"><span class="header-section-number">4</span> Rational Choice</a></li>
 <li><a class="" href="demand.html"><span class="header-section-number">5</span> Demand</a></li>
-<li><a class="" href="appendix.html"><span class="header-section-number">6</span> Appendix</a></li>
+<li><a class="" href="supply.html"><span class="header-section-number">6</span> Supply</a></li>
+<li><a class="" href="competitive-markets.html"><span class="header-section-number">7</span> Competitive Markets</a></li>
+<li><a class="" href="monopoly.html"><span class="header-section-number">8</span> Monopoly</a></li>
+<li><a class="" href="game-theory.html"><span class="header-section-number">9</span> Game Theory</a></li>
+<li><a class="" href="oligopoly.html"><span class="header-section-number">10</span> Oligopoly</a></li>
+<li><a class="" href="appendix.html"><span class="header-section-number">11</span> Appendix</a></li>
 </ul>
 
         <div class="book-extra">
@@ -329,8 +334,8 @@ Charles Darwin, in a letter to one of his friends expressed a similar opinion:</
 </h3>
 <p>How is an abstraction useful? Suppose the job is to drive from Indianapolis, IN to Columbus, OH. We need a map to help us get there.</p>
 <div style="page-break-after: always;"></div>
-<div id="htmlwidget-0ebe5804a34b7dfffa9c" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-0ebe5804a34b7dfffa9c">{"x":{"options":{"minZoom":2,"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomSnap":0.5,"zoomDelta":0.5},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[39.8752,-84.403],7.5,[]]},"evals":[],"jsHooks":[]}</script><p>Above we have a map. It has all kinds of information. The IN-KY border. If we zoom in, there are many roads, many cities. Zoom out, there is Lake Michigan, Lake Erie. A whole bunch of information about Illinois. Much of this information is not relevant if the task is to get from Indianapolis to Columbus.</p>
+<div id="htmlwidget-355e489cf1508225df4c" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-355e489cf1508225df4c">{"x":{"options":{"minZoom":2,"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomSnap":0.5,"zoomDelta":0.5},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[39.8752,-84.403],7.5,[]]},"evals":[],"jsHooks":[]}</script><p>Above we have a map. It has all kinds of information. The IN-KY border. If we zoom in, there are many roads, many cities. Zoom out, there is Lake Michigan, Lake Erie. A whole bunch of information about Illinois. Much of this information is not relevant if the task is to get from Indianapolis to Columbus.</p>
 <p>In order to get from Indy to Columbus, not much information is needed. Most, practically all of the information above is useless and needs to be discarded. Pretty much the only information needed is illustrated below. All we need is the starting point, Indy, the endpoint, and the instructions to get on I-70 in Indy until the sign “Columbus, OH” appears. This is really all that is essential.</p>
 <p>INDY—————————I 70———————————Col</p>
 <p>There are a few more things that one might reasonably add to our “model” of the relevant piece of geography. It might be useful where the gas stations are, especially the ones with clean bathrooms, and where the coffee shops are so the driver does not fall asleep. One such establishment, marked by G for gas station, is added in the model below.</p>
@@ -888,7 +893,7 @@ none of the above
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>An Introductory Course in Economics</strong>" was written by Gerhard Glomm, Joseph Westenberg. It was last built on 2021-12-31.</p>
+    <p>"<strong>An Introductory Course in Economics</strong>" was written by Gerhard Glomm, Joseph Westenberg. It was last built on 2022-01-03.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

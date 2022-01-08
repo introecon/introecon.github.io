@@ -7,17 +7,17 @@
 <title>Chapter 9 Game Theory | An Introductory Course in Economics</title>
 <meta name="author" content="Gerhard Glomm, Joseph Westenberg">
 <meta name="description" content="In this chapter we will learn: What is “Strategic Interactions” Understand the notion of “non-cooperative behavior” Define and explain the notion of Nash Equilibrium Understand and explain why...">
-<meta name="generator" content="bookdown 0.23 with bs4_book()">
+<meta name="generator" content="bookdown 0.24 with bs4_book()">
 <meta property="og:title" content="Chapter 9 Game Theory | An Introductory Course in Economics">
 <meta property="og:type" content="book">
 <meta property="og:description" content="In this chapter we will learn: What is “Strategic Interactions” Understand the notion of “non-cooperative behavior” Define and explain the notion of Nash Equilibrium Understand and explain why...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 9 Game Theory | An Introductory Course in Economics">
 <meta name="twitter:description" content="In this chapter we will learn: What is “Strategic Interactions” Understand the notion of “non-cooperative behavior” Define and explain the notion of Nash Equilibrium Understand and explain why...">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.0/transition.js"></script><script src="libs/bs3compat-0.3.0/tabs.js"></script><script src="libs/bs3compat-0.3.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script><link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script><link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
 <script src="libs/leaflet-1.3.1/leaflet.js"></script><link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
 <script src="libs/proj4-2.6.2/proj4.min.js"></script><script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script><link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
 <script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="style.css">
@@ -360,245 +360,110 @@ You can imagine that establishing such cooperation to cease all hostilities migh
 <span class="header-section-number">9.6.2</span> Multiple Choice<a class="anchor" aria-label="anchor" href="#multiple-choice-7"><i class="fas fa-link"></i></a>
 </h3>
 <ol style="list-style-type: decimal">
-<li>In the prisoners’ dilemma game
-<ol type="a" style="margin-left: 10px">
 <li>
-The two Nash equilibria are efficient
-</li>
-<li>
-The two Nash equilibria are inefficient
-</li>
-<li>
-The single Nash equilibrium is efficient
+<p>In the prisoners’ dilemma game</p>
+<p>A. The two Nash equilibria are efficient<br>
+B. The two Nash equilibria are inefficient<br>
+C. The single Nash equilibrium is efficient<br>
+D. The single Nash equilibrium is inefficient</p>
 </li>
 <li>
-The single Nash equilibrium is inefficient
-</li>
-</ol>
-</li>
-<li>A dominant strategy is
-<ol type="a" style="margin-left: 10px">
-<li>
-A strategy that is best for the player regardless of what the other player does
+<p>A dominant strategy is</p>
+<p>A. A strategy that is best for the player regardless of what the other player does<br>
+B. A strategy that is best for the player but only if the other player also uses a dominant strategy<br>
+C. A strategy that guarantees a payoff that is higher than the other player’s payoff<br>
+D. A strategy that guarantees an efficient equilibrium</p>
 </li>
 <li>
-A strategy that is best for the player but only if the other player also uses a dominant strategy
+<p>In the prisoners’ dilemma game</p>
+<p>A. Both players use a dominant strategy<br>
+B. Only one player uses a dominant strategy<br>
+C. No player uses a dominant strategy<br>
+D. There is no dominant strategy</p>
 </li>
 <li>
-A strategy that guarantees a payoff that is higher than the other player’s payoff
+<p>In the Battle of the Sexes game</p>
+<p>A. There is one Nash equilibrium, and it is efficient<br>
+B. There is one Nash equilibrium, and it is inefficient<br>
+C. There are two Nash equilibria and only one of these is efficient<br>
+D. There are two Nash equilibria that are efficient</p>
 </li>
 <li>
-A strategy that guarantees an efficient equilibrium
-</li>
-</ol>
-</li>
-<li>In the prisoners’ dilemma game
-<ol type="a" style="margin-left: 10px">
-<li>
-Both players use a dominant strategy
+<p>In the Game of Chicken, the number of efficient outcomes is</p>
+<p>A. 1<br>
+B. 2<br>
+C. 3<br>
+D. 4</p>
 </li>
 <li>
-Only one player uses a dominant strategy
+<p>In the Game of Chicken there is/are</p>
+<p>A. One efficient Nash equilibrium<br>
+B. Two efficient Nash equilibria<br>
+C. Three efficient Nash equilibria<br>
+D. Four efficient Nash equilibria</p>
 </li>
 <li>
-No player uses a dominant strategy
+<p>Game theory is most useful to study</p>
+<p>A. Competitive markets<br>
+B. Individual behavior<br>
+C. Monopolies<br>
+D. Oligopolies</p>
 </li>
 <li>
-There is no dominant strategy
-</li>
-</ol>
-</li>
-<li>In the Battle of the Sexes game
-<ol type="a" style="margin-left: 10px">
-<li>
-There is one Nash equilibrium, and it is efficient
+<p>Imagine that the US substantially increases its military presence in the Pacific Region. We would then expect</p>
+<p>A. South Korea to increase its defense expenditure because of the free rider problem<br>
+B. South Korea to decrease its defense expenditure because of the free rider problem<br>
+C. Overall defense spending by US allies in the Pacific region will increase approximately by the increase in US spending<br>
+D. Overall defense spending by US and its allies will decrease</p>
 </li>
 <li>
-There is one Nash equilibrium, and it is inefficient
+<p>Imagine that Abby and Jill play the repeated prisoners’ dilemma game for 20 rounds like the one that is described above. The meet regularly at their favorite gym and for dinner afterwards to collude and agree on strategies that generate high payoffs. There is one difference to the game described above. In all periods 3, 6, 9, 12, 15 and 18 the highest number that can be picked is 20, not 10 as in all the other periods and as in the game above. Then we would expect</p>
+<p>A. The collusive agreements likely to break down in the periods whose numbers are divisible by 3.<br>
+B. The collusive agreements likely to break down in all other periods<br>
+C. The collusive agreements likely to break down in the first 10 periods<br>
+D. The collusive agreements likely to break in even numbered periods</p>
 </li>
 <li>
-There are two Nash equilibria and only one of these is efficient
+<p>There is much shipping down across the Great Lakes of the US and Canada. There are just a few very large shipping companies. In some years the Great Lakes are frozen and therefore not “shippable” for long periods over the winter. Let’s call these years Harsh Winter Years, HWY. Other years are called normal. If the shipping companies have collusive agreements to cover the freight they charge to clients, we would expect</p>
+<p>A. The collusive agreements likely to be unaffected by the weather<br>
+B. The collusive agreements likely to break down in HWY.<br>
+C. The collusive agreements likely to break down in years other than HWY<br>
+D. The collusive agreements likely to break down in winter.</p>
 </li>
 <li>
-There are two Nash equilibria that are efficient
-</li>
-</ol>
-</li>
-<li>In the Game of Chicken, the number of efficient outcomes is
-<ol type="a" style="margin-left: 10px">
-<li>
-1
+<p>There are just a few large cement companies in Indiana. The market for cement is very localized due to large transportation costs. We would any kind of collusive agreements likely to break down in</p>
+<p>A. Recession years<br>
+B. Boom years<br>
+C. Even years<br>
+D. Leap years</p>
 </li>
 <li>
-2
+<p>There are two Cable TV companies in Indianapolis. They have sizeable monopoly power are pretty good at carving up the market and setting high collusive prices. The government breaks up these two companies into two companies each, so there is a total number of four firms. After the break-up</p>
+<p>A. Collusive agreements are harder to negotiate<br>
+B. Collusive agreements break down more easily<br>
+C. Prices can be expected to be lower<br>
+D. All of the above</p>
 </li>
 <li>
-3
+<p>Alice plays a repeated prisoners dilemma game for 20 rounds like the one described in the text above, alternatively against Jill and against Jackie. Both Jackie and Jill play versions of tit for tat and this is known to Alice. Pretty soon Alice realizes that Jill is more vengeful than Jackie, in the sense that her punishment phases last two periods, while Jackie’s last only one period. We can expect</p>
+<p>A. That Alice is as cooperative when she plays against Jackie, and she is when she plays against Jill<br>
+B. That Alice is more cooperative when playing Jackie than when playing Jill<br>
+C. That Alice is less cooperative when playing Jackie than when playing Jill<br>
+D. Alice to ignore her opponents’ actions</p>
 </li>
 <li>
-4
-</li>
-</ol>
-</li>
-<li>In the Game of Chicken there is/are
-<ol type="a" style="margin-left: 10px">
-<li>
-One efficient Nash equilibrium
+<p>There are two private trash haulers in Bloomington. They serve the entire Bloomington market. One trash hauler, in an interview with the local newspaper, says he will be forced to increase prices next year by 10%. Such an announcement can be expected to</p>
+<p>A. Be ignored by the other trash hauler.<br>
+B. Increase the likelihood of collusion in that market<br>
+C. Decrease the likelihood of collusion in that market<br>
+D. Decrease the price by the other trash hauler</p>
 </li>
 <li>
-Two efficient Nash equilibria
-</li>
-<li>
-Three efficient Nash equilibria
-</li>
-<li>
-Four efficient Nash equilibria
-</li>
-</ol>
-</li>
-<li>Game theory is most useful to study
-<ol type="a" style="margin-left: 10px">
-<li>
-Competitive markets
-</li>
-<li>
-Individual behavior
-</li>
-<li>
-Monopolies
-</li>
-<li>
-Oligopolies
-</li>
-</ol>
-</li>
-<li>Imagine that the US substantially increases its military presence in the Pacific Region. We would then expect
-<ol type="a" style="margin-left: 10px">
-<li>
-South Korea to increase its defense expenditure because of the free rider problem
-</li>
-<li>
-South Korea to decrease its defense expenditure because of the free rider problem
-</li>
-<li>
-Overall defense spending by US allies in the Pacific region will increase approximately by the increase in US spending
-</li>
-<li>
-Overall defense spending by US and its allies will decrease
-</li>
-</ol>
-</li>
-<li>Imagine that Abby and Jill play the repeated prisoners’ dilemma game for 20 rounds like the one that is described above. The meet regularly at their favorite gym and for dinner afterwards to collude and agree on strategies that generate high payoffs. There is one difference to the game described above. In all periods 3, 6, 9, 12, 15 and 18 the highest number that can be picked is 20, not 10 as in all the other periods and as in the game above. Then we would expect
-<ol type="a" style="margin-left: 10px">
-<li>
-The collusive agreements likely to break down in the periods whose numbers are divisible by 3.
-</li>
-<li>
-The collusive agreements likely to break down in all other periods
-</li>
-<li>
-The collusive agreements likely to break down in the first 10 periods
-</li>
-<li>
-The collusive agreements likely to break in even numbered periods
-</li>
-</ol>
-</li>
-<li>There is much shipping down across the Great Lakes of the US and Canada. There are just a few very large shipping companies. In some years the Great Lakes are frozen and therefore not “shippable” for long periods over the winter. Let’s call these years Harsh Winter Years, HWY. Other years are called normal. If the shipping companies have collusive agreements to cover the freight they charge to clients, we would expect
-<ol type="a" style="margin-left: 10px">
-<li>
-The collusive agreements likely to be unaffected by the weather
-</li>
-<li>
-The collusive agreements likely to break down in HWY.
-</li>
-<li>
-The collusive agreements likely to break down in years other than HWY
-</li>
-<li>
-The collusive agreements likely to break down in winter.
-</li>
-</ol>
-</li>
-<li>There are just a few large cement companies in Indiana. The market for cement is very localized due to large transportation costs. We would any kind of collusive agreements likely to break down in
-<ol type="a" style="margin-left: 10px">
-<li>
-Recession years
-</li>
-<li>
-Boom years
-</li>
-<li>
-Even years
-</li>
-<li>
-Leap years
-</li>
-</ol>
-</li>
-<li>There are two Cable TV companies in Indianapolis. They have sizeable monopoly power are pretty good at carving up the market and setting high collusive prices. The government breaks up these two companies into two companies each, so there is a total number of four firms. After the break-up
-<ol type="a" style="margin-left: 10px">
-<li>
-Collusive agreements are harder to negotiate
-</li>
-<li>
-Collusive agreements break down more easily
-</li>
-<li>
-Prices can be expected to be lower
-</li>
-<li>
-All of the above
-</li>
-</ol>
-</li>
-<li>Alice plays a repeated prisoners dilemma game for 20 rounds like the one described in the text above, alternatively against Jill and against Jackie. Both Jackie and Jill play versions of tit for tat and this is known to Alice. Pretty soon Alice realizes that Jill is more vengeful than Jackie, in the sense that her punishment phases last two periods, while Jackie’s last only one period. We can expect
-<ol type="a" style="margin-left: 10px">
-<li>
-That Alice is as cooperative when she plays against Jackie, and she is when she plays against Jill
-</li>
-<li>
-That Alice is more cooperative when playing Jackie than when playing Jill
-</li>
-<li>
-That Alice is less cooperative when playing Jackie than when playing Jill
-</li>
-<li>
-Alice to ignore her opponents’ actions
-</li>
-</ol>
-</li>
-<li>There are two private trash haulers in Bloomington. They serve the entire Bloomington market. One trash hauler, in an interview with the local newspaper, says he will be forced to increase prices next year by 10%. Such an announcement can be expected to
-<ol type="a" style="margin-left: 10px">
-<li>
-Be ignored by the other trash hauler.
-</li>
-<li>
-Increase the likelihood of collusion in that market
-</li>
-<li>
-Decrease the likelihood of collusion in that market
-</li>
-<li>
-Decrease the price by the other trash hauler
-</li>
-</ol>
-</li>
-<li>Imagine a prisoners dilemma game that goes on forever with some very high, close to one, probability. That means that each period, the probability that the game is going on next period is very high, close to one. Relative to the same prisoners’ dilemma game that is repeated only 20 rounds we would expect
-<ol type="a" style="margin-left: 10px">
-<li>
-A more efficient outcome for the players
-</li>
-<li>
-Higher payoffs in period 19
-</li>
-<li>
-Higher payoffs in period 20
-</li>
-<li>
-All of the above
-</li>
-</ol>
+<p>Imagine a prisoners dilemma game that goes on forever with some very high, close to one, probability. That means that each period, the probability that the game is going on next period is very high, close to one. Relative to the same prisoners’ dilemma game that is repeated only 20 rounds we would expect</p>
+<p>A. A more efficient outcome for the players<br>
+B. Higher payoffs in period 19<br>
+C. Higher payoffs in period 20<br>
+D. All of the above</p>
 </li>
 </ol>
 </div>
@@ -638,8 +503,8 @@ All of the above
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/introecon/book//blob/master/07-gametheory.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/introecon/book//edit/master/07-gametheory.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/introecon/book//blob/master/08-gametheory.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/introecon/book//edit/master/08-gametheory.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>
@@ -651,7 +516,7 @@ All of the above
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>An Introductory Course in Economics</strong>" was written by Gerhard Glomm, Joseph Westenberg. It was last built on 2022-01-03.</p>
+    <p>"<strong>An Introductory Course in Economics</strong>" was written by Gerhard Glomm, Joseph Westenberg. It was last built on 2022-01-08.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
